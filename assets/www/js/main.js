@@ -37,7 +37,6 @@ require.config( {
    }
 } );
 
-var pid;
 // We launch the App
 require(['underscore', 'parse', 'router'],
     function (_, Parse, AppRouter) {

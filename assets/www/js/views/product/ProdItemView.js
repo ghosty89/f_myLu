@@ -8,7 +8,6 @@ define(["zepto", "underscore", "parse", "handlebars", "text!tpl/prod_tpl.html",
               tagName: "div",
               template: Handlebars.compile(template),
               initialize: function() {
-
                  this.model =new ProductModel({
                        model:pid
                     

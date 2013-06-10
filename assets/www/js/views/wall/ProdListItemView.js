@@ -22,7 +22,10 @@ define(["zepto", "underscore", "parse", "handlebars",
               },
               buttonPressed: function(e) {
                  e.preventDefault();
-                 Parse.history.navigate("product/" + this.model.cid, {trigger: true});
+                 console.log(this.cid);
+                 console.log(this.model.attributes);
+                 var k=this.model.attributes;
+                 Parse.history.navigate("product/" + k, {trigger: true});
                  console.log("ehi you guyz! don't touch da butt! " + this.cid);
                  this.model.set({name: "il model che hai cambiato è il " + this.model.cid});
               }

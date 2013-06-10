@@ -26,10 +26,7 @@ define(
                 },
                 product: function(id) {
                     console.log("il prod è " + id);
-                    
-                    var test = this.currentView;
-                    pid=id;
-                    var page = new ProdWrap({el: $('body')});
+                    var page = new ProdWrap(id);
                 }
             });
 

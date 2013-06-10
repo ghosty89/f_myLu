@@ -3,7 +3,6 @@ define(["zepto", "underscore", "parse", "handlebars", "text!tpl/prod_list_tpl.ht
         function($, _, Parse, Handlebars, template, ProductModel, ProductList, ProdListItemView) {
 
            var ProdListItem = Parse.View.extend({
-              
               className: "prod_list_item",
               tagName: "ul",
               template: Handlebars.compile(template),
@@ -43,7 +42,6 @@ define(["zepto", "underscore", "parse", "handlebars", "text!tpl/prod_list_tpl.ht
                        price: 15.01
                     })
                  ]);
-                 
                  this.render();
               },
               render: function() {
