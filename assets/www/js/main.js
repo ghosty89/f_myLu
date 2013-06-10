@@ -46,7 +46,7 @@ require(['underscore', 'parse', 'router'],
         
 
            function run() {
-              Parse.initialize("MlOeVbLAzAwo33O2TIpNpgeueavgtV2cffZC5Lez", "javascriptKey");
+              Parse.initialize("MlOeVbLAzAwo33O2TIpNpgeueavgtV2cffZC5Lez", "1R2lrheLBnHvrIf62yTP7SNf2MzK9fbcEY4cjgKS");
               new AppRouter();
               Parse.history.start();
            }

@@ -7,7 +7,7 @@ define(["zepto", "underscore", "parse", "handlebars", "text!tpl/prod_list_tpl.ht
               tagName: "ul",
               template: Handlebars.compile(template),
               initialize: function() {
-
+                  
                  this.model = new ProductList([
                     new ProductModel({
                        name: "prod1",

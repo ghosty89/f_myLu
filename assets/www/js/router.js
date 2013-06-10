@@ -12,7 +12,7 @@ define(
                     "": "t_main",
                     "search": "search",
                     "settings": "settings",
-                    "product/:id": "product"
+                    "product": "product"
 
                 },
                 t_main: function() {
@@ -24,9 +24,8 @@ define(
                 settings: function() {
                     console.log("jamo! carica ssa view!! quela pe ji settings");
                 },
-                product: function(id) {
-                    console.log("il prod è " + id);
-                    var page = new ProdWrap(id);
+                product: function() {
+                    var page = new ProdWrap({el: $('body')});
                 }
             });
 
